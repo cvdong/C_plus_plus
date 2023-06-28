@@ -19,6 +19,33 @@ void worker(int a, string& str){
 }
 
 
+class Infer{
+    public:
+        Infer(){
+
+            // worker_thread_ = thread(infer_worker, this);
+            worker_thread_ = thread(&Infer::infer_worker, this);
+
+        }
+
+    private:
+        // static void infer_worker(Infer* self){
+
+        // }
+
+        void infer_worker(){
+            this->worker_thread_;
+            worker_thread_;
+
+        }
+
+
+    private:
+        thread worker_thread_;
+
+};
+
+
 int main(){
     // 完整启动线程案例
     // thread t(func, args...)
