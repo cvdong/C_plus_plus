@@ -1,6 +1,6 @@
 
 // 1. 启动线程
-// 知识点： thread join jooinable detach std::ref()
+// 知识点： thread join joinable detach std::ref()
 
 #include <thread>
 #include <stdio.h>
